@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.jpg" class="logo"> -->
+                <h3>Manik.</h3>
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-circle-xmark" style="margin-left: 25px;" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+                
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Manik</span><br> Mallick From Kolkata</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo3.jpeg" class="imge">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A creative thinker and curious learner, adept in Software Engineer I'm known among my peers for being highly 
+                        disciplined, collaborative and hardworking with a strong sense of responsibility.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('educations')">Educations</p>
+                        <p class="tab-links" onclick="opentab('Achivements')">Achivements</p>
+                    </div>
+                    <div class="tab-contains active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming-Languages</span><br>C++, Java,   SQL and JavaScript. </li>
+                            <li><span>Others skills</span><br>Data structures and algorithms, OOPs, Core java, Dbms,Html,Css GitHub.</li>
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contains" id="educations">
+                        <ul>
+                            <li><span>2024</span><br>MCA from Techno Main Saltlake  (SGPA of 7.5)</li>
+                            <li><span>2020</span><br>Bsc Computer Science Honours from Calcutta University (Percentage: 64%) </li>
+                            <li><span>2016</span><br>Higher Secondary Education  (Percentage: 64%)</li>
+                            <li><span>2014</span><br>Secondary Education  (Percentage: 71%)</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contains" id="Achivements">
+                        <ul>
+                            <li>Secured a good rank in Jeca 2022 </li>
+                            <li>Complete a web development course 2023 from Udemy</li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-lists">
+                <div class="project-1">
+                    <img src="images/ecommerce.jpeg">
+                    <div class="layer">
+                        <h3>Ecommerce App</h3>
+                        <p>An ecommerce website is your digital storefront on the internet. It facilitates the
+                            transaction between a buyer and seller. It is the virtual space where you showcase products,
+                            and online customers make selections.</p>
+                    </div>
+                </div>
+                <div class="project-1">
+                    <img src="images/weather.jpeg">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>This is a weather app and its helps to show the weather report of all cities and countries.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-1">
+                    <img src="images/ebook.jpeg">
+                    <div class="layer">
+                        <h3>Ebook Management System</h3>
+                        <p>This ebbok management system is used to buy new books as well as old books and also users can
+                            sell old books. it has admin section who can add , delete and modify any books details </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mallickmanik2015@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7003196157</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/manikmallick/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/heromanik"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        
+
+                    </div>
+                    <a href="manik.pdf" download class="btn btn2" id="resume">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text"name="Name" placeholder="Your Name" required>
+                        <input type="email"name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Manik. All are the details are provided is verified and correct.</p>
+        </div>
+
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontains = document.getElementsByClassName("tab-contains");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontain of tabcontains) {
+                tabcontain.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right="0";
+        }
+        function closemenu() {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw-AW3uVcDuxInTKzinj-5tUxtwnD4m69sAJtnHPbSiq7KKrFpfWuK2iETer71CfG4b_g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <link rel="javascript" href="script.js">
+</body>
+
+</html>
